@@ -1,24 +1,12 @@
-const { writeFile, readFile, read } = require("fs");
+const { readFile } = require("fs");
 
-readFile("./content/first.txt", "utf-8", (err, res) => {
+console.log("this is the first test");
+readFile("./content/first.txt", "utf-8", (res, err) => {
   if (err) {
     return console.log(err);
   }
-  const first = res;
-  readFile("./content/second.txt", "utf-8", (err, res) => {
-    if (err) {
-      return console.log(err);
-    }
-    const second = res;
-    writeFile(
-      "./content/third.txt",
-      `Heres is the result: ${first}, ${second}`,
-      (err, res) => {
-        if (err) {
-          return console.log(err);
-        }
-        console.log(res);
-      }
-    );
-  });
+  console.log(result);
+  console.log("testing the event loop");
 });
+
+console.log("this is the end of the test");
