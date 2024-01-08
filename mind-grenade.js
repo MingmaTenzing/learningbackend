@@ -1,4 +1,4 @@
-const num1 = 5;
+const num1 = 44;
 const num2 = 52;
 
 const addValues = (num1, num2) => {
